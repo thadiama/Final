@@ -1,0 +1,665 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!29 &1
+OcclusionCullingSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_OcclusionBakeSettings:
+    smallestOccluder: 5
+    smallestHole: 0.25
+    backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
+--- !u!104 &2
+RenderSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 9
+  m_Fog: 0
+  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  m_FogMode: 3
+  m_FogDensity: 0.01
+  m_LinearFogStart: 0
+  m_LinearFogEnd: 300
+  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
+  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
+  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientIntensity: 1
+  m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
+  m_SkyboxMaterial: {fileID: 0}
+  m_HaloStrength: 0.5
+  m_FlareStrength: 1
+  m_FlareFadeSpeed: 3
+  m_HaloTexture: {fileID: 0}
+  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}
+  m_DefaultReflectionMode: 0
+  m_DefaultReflectionResolution: 128
+  m_ReflectionBounces: 1
+  m_ReflectionIntensity: 1
+  m_CustomReflection: {fileID: 0}
+  m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
+--- !u!157 &3
+LightmapSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 12
+  m_GIWorkflowMode: 1
+  m_GISettings:
+    serializedVersion: 2
+    m_BounceScale: 1
+    m_IndirectOutputScale: 1
+    m_AlbedoBoost: 1
+    m_EnvironmentLightingMode: 0
+    m_EnableBakedLightmaps: 0
+    m_EnableRealtimeLightmaps: 0
+  m_LightmapEditorSettings:
+    serializedVersion: 12
+    m_Resolution: 2
+    m_BakeResolution: 40
+    m_AtlasSize: 1024
+    m_AO: 0
+    m_AOMaxDistance: 1
+    m_CompAOExponent: 1
+    m_CompAOExponentDirect: 0
+    m_ExtractAmbientOcclusion: 0
+    m_Padding: 2
+    m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
+    m_TextureCompression: 1
+    m_FinalGather: 0
+    m_FinalGatherFiltering: 1
+    m_FinalGatherRayCount: 256
+    m_ReflectionCompression: 2
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVREnvironmentSampleCount: 500
+    m_PVREnvironmentReferencePointCount: 2048
+    m_PVRFilteringMode: 2
+    m_PVRDenoiserTypeDirect: 0
+    m_PVRDenoiserTypeIndirect: 0
+    m_PVRDenoiserTypeAO: 0
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVREnvironmentMIS: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ExportTrainingData: 0
+    m_TrainingDataDestination: TrainingData
+    m_LightProbeSampleCountMultiplier: 4
+  m_LightingDataAsset: {fileID: 0}
+  m_LightingSettings: {fileID: 0}
+--- !u!196 &4
+NavMeshSettings:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_BuildSettings:
+    serializedVersion: 2
+    agentTypeID: 0
+    agentRadius: 0.5
+    agentHeight: 2
+    agentSlope: 45
+    agentClimb: 0.4
+    ledgeDropHeight: 0
+    maxJumpAcrossDistance: 0
+    minRegionArea: 2
+    manualCellSize: 0
+    cellSize: 0.16666667
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
+    debug:
+      m_Flags: 0
+  m_NavMeshData: {fileID: 0}
+--- !u!1 &112301324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112301325}
+  - component: {fileID: 112301326}
+  m_Layer: 0
+  m_Name: ControlQuizData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112301325
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112301324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &112301326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112301324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 471defbe9d342944f81712b706e2d42a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allLevelData:
+  - name: Level 1 (Shapes and Colors)
+    timeLmtSec: 75
+    GainedPointsCorrect: 10
+    questions:
+    - questionTxt: In which painting is triangle the main shape?
+      answers:
+      - answerImage: {fileID: 21300000, guid: f9b7ac9659cef304d9382d4a8ac5d79c, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 17c9887464a37f74e9758fcbb54caf9d, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: fe284aa02513a9f4aab7529b0d51435f, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting does the color bright yellow appear?
+      answers:
+      - answerImage: {fileID: 21300000, guid: ac6d9b3b4e34d5747ae8fd1a7d4f38ba, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 17c9887464a37f74e9758fcbb54caf9d, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 028c7649fdb1d4647b11b94431753b1a, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting are there more than ten circles?
+      answers:
+      - answerImage: {fileID: 21300000, guid: d5df2f70199735b41b5baa6d0b088f3d, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 82774efe3dc8e59428613e110cba55cf, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: a641fcd6ccfe6bc449f6c8686788340e, type: 3}
+        isCorrect: 1
+    - questionTxt: In which painting are there concentric circles?
+      answers:
+      - answerImage: {fileID: 21300000, guid: b35fcbe15654604409eeb7e6901038d1, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 028c7649fdb1d4647b11b94431753b1a, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 805a7ddb6855e284382942a868f1f57f, type: 3}
+        isCorrect: 1
+    - questionTxt: In which painting are there black lines?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 9b083bd56b4e7af49be2cdc4541c462c, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 08e08111055c6054c8e53b1870d8cb17, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: a641fcd6ccfe6bc449f6c8686788340e, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting do the colors red, pink, yellow and green appear?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 70f263a1e2aa5d0408cd5251bd05b78e, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 17c9887464a37f74e9758fcbb54caf9d, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 70274625271aa844e8fc92d9c387c906, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting are there mostly squares and rectangles?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 805a7ddb6855e284382942a868f1f57f, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 45a3d1ac61aec294ca6edbded0840ede, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: d5df2f70199735b41b5baa6d0b088f3d, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting is white the main color?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 8f15587791fed0f4fbc8809990e7094d, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 70f263a1e2aa5d0408cd5251bd05b78e, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 82774efe3dc8e59428613e110cba55cf, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting the circle shape is not displayed?
+      answers:
+      - answerImage: {fileID: 21300000, guid: f9b7ac9659cef304d9382d4a8ac5d79c, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: fe284aa02513a9f4aab7529b0d51435f, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: ac6d9b3b4e34d5747ae8fd1a7d4f38ba, type: 3}
+        isCorrect: 1
+    - questionTxt: In which painting is there a red circle?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 08e08111055c6054c8e53b1870d8cb17, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 9b083bd56b4e7af49be2cdc4541c462c, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: d5df2f70199735b41b5baa6d0b088f3d, type: 3}
+        isCorrect: 0
+  - name: Level 2 (Style)
+    timeLmtSec: 120
+    GainedPointsCorrect: 20
+    questions:
+    - questionTxt: Which painting belongs to the High-Renaissance period?
+      answers:
+      - answerImage: {fileID: 21300000, guid: cad0ccc12669dd14db1c7cf5a81fc89a, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: fbe3d8bc452bd204f8b88614eda3bb2d, type: 3}
+        isCorrect: 0
+    - questionTxt: Which is a baroque painting?
+      answers:
+      - answerImage: {fileID: 21300000, guid: d5394f66e5b640f4193db729576b687b, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: b4cd14aeda9d48647bf16a8d8fa3fd7e, type: 3}
+        isCorrect: 1
+    - questionTxt: Which painting belongs to the Impressionist movement?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 465751a3aeabe6a47b89e78eb39c26a9, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: b425dff6a3cf2d44e8125b573ca9c9b2, type: 3}
+        isCorrect: 0
+    - questionTxt: In which Neo-Impressionist painting is the technique of Pointillism
+        used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 98e32a63467430e46b4c64f44ea5aad5, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: b4fb0b005f4b92b42a39d8225f12e49f, type: 3}
+        isCorrect: 0
+    - questionTxt: Which is a Surealistic painting?
+      answers:
+      - answerImage: {fileID: 21300000, guid: a7c8e751a08d05c499dadbc0e2d48f80, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: b484cf7efc71f1d4286e1aa7059c3507, type: 3}
+        isCorrect: 1
+    - questionTxt: Which painting's style is Analytical Cubism?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 48714b74cf1d8cd408e0b6550ead29f1, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: b9ff2bf652fba88438f965e6cc851a2c, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 530ca6cb8a1583b43bcf22701080e2f2, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting is Realistic?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 9d5282b9a12f8214dbdcbc23fee20aed, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: f40cf0be99084e5418bd381dfcf332e9, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting belongs to the Romantic movement?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 458bacd4e369d8844abf37303700632c, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 98da1073ebdd3e74f8976401eaa51b7d, type: 3}
+        isCorrect: 1
+    - questionTxt: Which is a PopArt painting?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 48714b74cf1d8cd408e0b6550ead29f1, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 30962d9011932214bbc292e0ba65832e, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 98f0b83a5ebdc4d40bb312998eac92ff, type: 3}
+        isCorrect: 1
+    - questionTxt: Which painting's style is Abstract Expressionism?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 2c6d78ee55614e545b4d52ff99d22b03, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 9b665f49f6d4dfe4290398291ec28109, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 530ca6cb8a1583b43bcf22701080e2f2, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: a9a8b6212d82ffb48b7fc286a3ba8511, type: 3}
+        isCorrect: 0
+  - name: Level 3 (Painter and Painting)
+    timeLmtSec: 150
+    GainedPointsCorrect: 30
+    questions:
+    - questionTxt: Which painting by Gustan Klimt is called "The Kiss"?
+      answers:
+      - answerImage: {fileID: 21300000, guid: cf4d93ccdf66e7644af7bd91bcb6794e, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 82774efe3dc8e59428613e110cba55cf, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 046bee34c12722748a8f846e6f2816e6, type: 3}
+        isCorrect: 0
+    - questionTxt: Which is Johannes Vermeer's painting called "Girl with the Pearl
+        Earing"?
+      answers:
+      - answerImage: {fileID: 21300000, guid: a1ab1c4ce2eab0f439714e14b8121ffc, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: c8eb4916ea1e97f4db0c420a4a4d730c, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: a7414fc4638af9b42829f07874bb0b2f, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 4b0beb16804d03b48bc77b5370b6f624, type: 3}
+        isCorrect: 0
+    - questionTxt: Which is Rene Magritte's painting called "The Son of Man"?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 7c5594e11c988e34e862cb8c15ecc90a, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 15dae8cec1d15fa4e87d989dcdc49299, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 2efa70538b4f99745a52a8d3c63653b2, type: 3}
+        isCorrect: 1
+    - questionTxt: Which of these paintings by Leonardo Da Vinci is called "The Last
+        Supper"?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 340e9c2eb02ffb04693f3e8e0175fb3e, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 8369823b1c1673e4ba6b13dfa08d43b8, type: 3}
+        isCorrect: 1
+    - questionTxt: Which of these paintings is Pablo Picasso's creation?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 68d6e116a67fec04baf2df42d2b4e57d, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 8720addaef1f0c64f8022d27a5bcb1a3, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 3e557aeca1057cb45a29ed0be4f68c40, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 7c525f8770d79be49ae6433ba475b247, type: 3}
+        isCorrect: 0
+    - questionTxt: Which of these paintings is Georgio De Chirico's creation?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 3ba5b2c121a9c594199f13bb6b99c3bb, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 7c5594e11c988e34e862cb8c15ecc90a, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: ab5f03f5096294c45a482796e7eedcca, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 30d6b366263c26d4f844454176b9d941, type: 3}
+        isCorrect: 0
+    - questionTxt: Which of these paintings is Claude Monet's creation?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 7e8a5d0e14a885f4aafe3ceb92e6efbd, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: b425dff6a3cf2d44e8125b573ca9c9b2, type: 3}
+        isCorrect: 0
+    - questionTxt: Which of these paintings is Edouard Manet's creation?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 530ca6cb8a1583b43bcf22701080e2f2, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 70f263a1e2aa5d0408cd5251bd05b78e, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 8720addaef1f0c64f8022d27a5bcb1a3, type: 3}
+        isCorrect: 1
+    - questionTxt: Which of these paintings is Nikos Engonopoulos' creation?
+      answers:
+      - answerImage: {fileID: 21300000, guid: c056736bbca91a14083bd5be7ad60b5e, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 99350203e74bf25489729b7111e57066, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 82c03c232c86b9c4c8bdab18894a633d, type: 3}
+        isCorrect: 0
+    - questionTxt: Which is Salvador Dali's painting called "The discovery of America
+        by Christopher Colombus"?
+      answers:
+      - answerImage: {fileID: 21300000, guid: b35fcbe15654604409eeb7e6901038d1, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: ecae36a9d22acf54dbc80c0391aa1b97, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 70274625271aa844e8fc92d9c387c906, type: 3}
+        isCorrect: 0
+  - name: Level 4 (Media)
+    timeLmtSec: 180
+    GainedPointsCorrect: 40
+    questions:
+    - questionTxt: In which painting was Wood used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 7c5594e11c988e34e862cb8c15ecc90a, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 2efa70538b4f99745a52a8d3c63653b2, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: a1ab1c4ce2eab0f439714e14b8121ffc, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 03234082aa478264da7dbfd40f59e174, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting were Crayon, Tempera and Cardboard used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 70f263a1e2aa5d0408cd5251bd05b78e, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 30962d9011932214bbc292e0ba65832e, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: ac6d9b3b4e34d5747ae8fd1a7d4f38ba, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting were Ink, Watercolor and Paper used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 530ca6cb8a1583b43bcf22701080e2f2, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: ee4cfcad3acbeff4d93dbab81d15cca6, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 45a3d1ac61aec294ca6edbded0840ede, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting were Pastel and the technique Fresco used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: f9b7ac9659cef304d9382d4a8ac5d79c, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: cad0ccc12669dd14db1c7cf5a81fc89a, type: 3}
+        isCorrect: 1
+    - questionTxt: In which painting was no Oil paint used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: c6a13ce27b030fa47ba6d4e9287f79ca, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 08e08111055c6054c8e53b1870d8cb17, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: c947aa0aa8958f84baf73d59bf4dd51f, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting was Oak panel used instead of canvas?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 046bee34c12722748a8f846e6f2816e6, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 8720addaef1f0c64f8022d27a5bcb1a3, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: c70bb4de417b55a45a2736a86d42dde8, type: 3}
+        isCorrect: 1
+    - questionTxt: In which painting was Tempera used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 340e9c2eb02ffb04693f3e8e0175fb3e, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: cb5c1887f49d18546b8b40dd8133cc9e, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting were Gouache, Watercolor and Paper used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 3f83b29c328ce9d4a87aaa3e81917191, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 9b083bd56b4e7af49be2cdc4541c462c, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: c056736bbca91a14083bd5be7ad60b5e, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting was used any material other than oil?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 4b0beb16804d03b48bc77b5370b6f624, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: b9ff2bf652fba88438f965e6cc851a2c, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 03234082aa478264da7dbfd40f59e174, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 6e011277c30a99f478e32e1ebeee4b9c, type: 3}
+        isCorrect: 0
+    - questionTxt: In which painting were no Tempera and Pastel used?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 8369823b1c1673e4ba6b13dfa08d43b8, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: bd2778b1df120ac46bccf5f17580eb4e, type: 3}
+        isCorrect: 1
+  - name: Level 5 (Date of Creation)
+    timeLmtSec: 210
+    GainedPointsCorrect: 50
+    questions:
+    - questionTxt: Which painting was painted by Leonardo Da Vinci in 1503?
+      answers:
+      - answerImage: {fileID: 21300000, guid: a1ab1c4ce2eab0f439714e14b8121ffc, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 68d6e116a67fec04baf2df42d2b4e57d, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 8f15587791fed0f4fbc8809990e7094d, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 4b0beb16804d03b48bc77b5370b6f624, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting is estimated to have been painted by Johannes Vermeer
+        in 1665?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 028c7649fdb1d4647b11b94431753b1a, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 03234082aa478264da7dbfd40f59e174, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: c8eb4916ea1e97f4db0c420a4a4d730c, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 2c6d78ee55614e545b4d52ff99d22b03, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting was created by Georgio De Chirico in 1971?
+      answers:
+      - answerImage: {fileID: 21300000, guid: b35fcbe15654604409eeb7e6901038d1, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: ab5f03f5096294c45a482796e7eedcca, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 15dae8cec1d15fa4e87d989dcdc49299, type: 3}
+        isCorrect: 0
+    - questionTxt: Which is a 1964 painting, by Rene Magritte?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 7c525f8770d79be49ae6433ba475b247, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 2efa70538b4f99745a52a8d3c63653b2, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 68d6e116a67fec04baf2df42d2b4e57d, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 7c5594e11c988e34e862cb8c15ecc90a, type: 3}
+        isCorrect: 0
+    - questionTxt: Which is a 1931 painting, by Salvador Dali?
+      answers:
+      - answerImage: {fileID: 21300000, guid: b484cf7efc71f1d4286e1aa7059c3507, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: fbe3d8bc452bd204f8b88614eda3bb2d, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting is a creation by Pablo Picasso in 1910?
+      answers:
+      - answerImage: {fileID: 21300000, guid: b9ff2bf652fba88438f965e6cc851a2c, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 3ba427fefd6f53d4b82a41b9751f23bc, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 458bacd4e369d8844abf37303700632c, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting was painted around 1901 by Henri de Toulouse-Lautrec?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 82774efe3dc8e59428613e110cba55cf, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: a0c655919ce84c245823df4719cbe6c5, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: d5df2f70199735b41b5baa6d0b088f3d, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting was made in 1890?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 15dae8cec1d15fa4e87d989dcdc49299, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: b35fcbe15654604409eeb7e6901038d1, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 82c03c232c86b9c4c8bdab18894a633d, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting was created in 1915, by Kazimir Malevich?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 98f0b83a5ebdc4d40bb312998eac92ff, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 7e8a5d0e14a885f4aafe3ceb92e6efbd, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 17c9887464a37f74e9758fcbb54caf9d, type: 3}
+        isCorrect: 1
+    - questionTxt: Which Delacroix's painting was completed in 1822?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 9730cc962053244418637500aa74b9d3, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 98da1073ebdd3e74f8976401eaa51b7d, type: 3}
+        isCorrect: 1
+  - name: Level 6 (Museums and Galleries)
+    timeLmtSec: 240
+    GainedPointsCorrect: 60
+    questions:
+    - questionTxt: Which painting belongs to the permanet collection of the Louvre
+        Museum in Paris, France?
+      answers:
+      - answerImage: {fileID: 21300000, guid: a2b1dd3ca33ac6244bb4a3db932bfd7f, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: 08e08111055c6054c8e53b1870d8cb17, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting is on display at the Rijksmuseum in Amsterdam,
+        Netherlands?
+      answers:
+      - answerImage: {fileID: 21300000, guid: b4fb0b005f4b92b42a39d8225f12e49f, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: b4cd14aeda9d48647bf16a8d8fa3fd7e, type: 3}
+        isCorrect: 1
+    - questionTxt: Which painting is exhibited at the Museum of Modern Art in New
+        York, US?
+      answers:
+      - answerImage: {fileID: 21300000, guid: cad0ccc12669dd14db1c7cf5a81fc89a, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: ee4cfcad3acbeff4d93dbab81d15cca6, type: 3}
+        isCorrect: 1
+    - questionTxt: "Which painting is currently at the Kr\xF6ller-M\xFCller Museum
+        in Ottero, Netherlands?"
+      answers:
+      - answerImage: {fileID: 21300000, guid: 21f66f00b5f8bb64fb964263fb7377a8, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: c947aa0aa8958f84baf73d59bf4dd51f, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: b4509aff5969ad148baa7812f2895d61, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting is displayed at the Marmottan Monet Museum in Paris,
+        France?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 805a7ddb6855e284382942a868f1f57f, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 465751a3aeabe6a47b89e78eb39c26a9, type: 3}
+        isCorrect: 1
+    - questionTxt: Which painting is located at the Mauritshuis Museum in the Hage,
+        Netherlands?
+      answers:
+      - answerImage: {fileID: 21300000, guid: bd2778b1df120ac46bccf5f17580eb4e, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: cb5c1887f49d18546b8b40dd8133cc9e, type: 3}
+        isCorrect: 1
+    - questionTxt: Which painting was sold to the Art Institute of Chicago, US?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 5c1d38524d20d3b47aa48b54fa9b828e, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: b425dff6a3cf2d44e8125b573ca9c9b2, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting belongs to the Hermitage Museum in St Petersburg,
+        Russia?
+      answers:
+      - answerImage: {fileID: 21300000, guid: a641fcd6ccfe6bc449f6c8686788340e, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: fe284aa02513a9f4aab7529b0d51435f, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 3f83b29c328ce9d4a87aaa3e81917191, type: 3}
+        isCorrect: 1
+    - questionTxt: Which painting is exhibited at the Courtauld Institute of Art
+        in London, UK?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 1d70093516cfe51428a052bc3dbd7e1e, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: f40cf0be99084e5418bd381dfcf332e9, type: 3}
+        isCorrect: 0
+    - questionTxt: Which painting is on display at the National Gallery of Athens,
+        Greece?
+      answers:
+      - answerImage: {fileID: 21300000, guid: 3ba5b2c121a9c594199f13bb6b99c3bb, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 4fce38ac48106364e96bce566f59cf41, type: 3}
+        isCorrect: 0
+      - answerImage: {fileID: 21300000, guid: 3e557aeca1057cb45a29ed0be4f68c40, type: 3}
+        isCorrect: 1
+      - answerImage: {fileID: 21300000, guid: a7414fc4638af9b42829f07874bb0b2f, type: 3}
+        isCorrect: 0
